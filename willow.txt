@@ -1,0 +1,32 @@
+hello manager
+{
+
+  hollow hello_world:
+  {
+    write: "Hello World\n";
+  }
+
+  hollow main:
+  {
+
+    hello_world:
+    num count = 0;
+
+    loop: count < 10
+    {
+      write: "count is %03d\n", count;
+    }
+
+    check: count == 5
+    {
+      write: "count is %03d\n", count;
+    }
+
+    num table data<3> {0, 1, 2};
+  }
+
+  num hi:
+  {
+
+  }
+}
