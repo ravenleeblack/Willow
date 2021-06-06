@@ -12,6 +12,8 @@ hello manager
     hello_world:
     num count = 0;
 
+    num table data<3> {0, 1, 2};
+    
     loop: count < 10
     {
       write: "count is %03d\n", count;
@@ -21,8 +23,6 @@ hello manager
     {
       write: "count is %03d\n", count;
     }
-
-    num table data<3> {0, 1, 2};
   }
 
   num hi:
